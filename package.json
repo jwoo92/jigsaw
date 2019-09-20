@@ -1,0 +1,77 @@
+{
+  "name": "@draftbit/ui",
+  "version": "2.34.4",
+  "description": "Jigsaw component library for Draftbit",
+  "main": "src/index.js",
+  "repository": "git@github.com:draftbit/jigsaw.git",
+  "author": "Draftbit",
+  "license": "ISC",
+  "private": false,
+  "scripts": {
+    "clean": "del-cli ./dist",
+    "precommit": "echo yarn lint && yarn flow && yarn test",
+    "flow": "flow",
+    "lint": "eslint src",
+    "test": "jest",
+    "pretty": "prettier --config ./package.json --write '{example,src}/**/*.{js,css,json}'",
+    "build:web": "yarn clean && babel src -d --out-dir dist --ignore \"**/__tests__\" && cp -r src/assets dist/."
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "peerDependencies": {
+    "expo": ">=34.0.3",
+    "react": "16.8.3",
+    "react-native": ">=0.59.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-minify": "^0.5.0",
+    "babel-preset-react-native": "^4.0.1",
+    "del-cli": "^2.0.0",
+    "flow-bin": "^0.101.0",
+    "glob": "^7.1.4",
+    "jest": "^24.8.0",
+    "node-fetch": "^2.6.0",
+    "prettier": "1.18.2",
+    "react-test-renderer": "^16.8.6"
+  },
+  "dependencies": {
+    "@callstack/react-theme-provider": "^3.0.0",
+    "@expo/vector-icons": "^10.0.2",
+    "color": "^3.1.2",
+    "create-react-context": "^0.3.0",
+    "dateformat": "^3.0.3",
+    "expo-av": "^6.0.0",
+    "expo-constants": "^6.0.0",
+    "react-lifecycles-compat": "^3.0.4",
+    "react-native-gesture-handler": "^1.3.0",
+    "react-native-maps": "^0.24.2",
+    "react-native-platform-touchable": "^1.1.1",
+    "react-native-progress": "^3.6.0",
+    "react-native-reanimated": "^1.1.0",
+    "react-native-slider": "^0.11.0",
+    "react-native-step-indicator": "^0.0.11"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "singleQuote": false,
+    "semi": false,
+    "useTabs": false,
+    "printWidth": 100,
+    "arrowParens": "avoid",
+    "trailingComma": "none",
+    "jsxBracketSameLine": true
+  }
+}
