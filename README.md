@@ -1,6 +1,6 @@
 # Jigsaw
 
-Jigsaw is Draftbit's official component library and design system. This is the library we use internally to make sure that your fonts, colors, shadows, and spcaing all match what we have in our builder 😃
+Jigsaw is Draftbit's official component library and design system. This is the library we use internally to make sure that your fonts, colors, shadows, and spacing all match what we have in our builder 😃
 
 ## Requirements
 - Node.js
