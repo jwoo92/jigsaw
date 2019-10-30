@@ -7,6 +7,7 @@ import {
   FORM_TYPES,
   BORDER_RADIUS_MODE,
   ELEVATION_TYPE
+} from '../core/component-types';
 
 class Container extends React.Component {
   render() {
